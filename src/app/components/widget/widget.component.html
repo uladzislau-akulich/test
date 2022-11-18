@@ -1,0 +1,13 @@
+<div class="info">
+  <p>City: {{widget.cityName}}</p>
+  <p>Weather: {{widget.weather}}</p>
+  <p>Max temperature: {{widget.maxTemp}}</p>
+  <p>Min temperature: {{widget.minTemp}}</p>
+  <p>Wind speed: {{widget.windSpeed}} meter/sec</p>
+  <p>Wind direction: {{widget.windDirection}} degrees</p>
+  <p>Humidity: {{widget.humidity}}%</p>
+</div>
+<div class="buttons">
+  <button mat-button mat-raised-button color="primary" (click)="updateWidget()">Update</button>
+  <button mat-button mat-raised-button color="warn" (click)="deleteWidget()">Delete</button>
+</div>

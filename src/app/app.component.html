@@ -1,0 +1,11 @@
+<header class="header">Task</header>
+<div class="search">
+  <input class="search-input" placeholder="City" type="text" name="city" [(ngModel)]="inputValue" autocomplete="off">
+  <button (click)="createWidget()">
+    <mat-icon>search</mat-icon>
+  </button>
+</div>
+<div class="widgets-list">
+  <app-widget *ngFor="let widget of widgets" [widget]="widget"></app-widget>
+</div>
+<footer class="footer">Uladzislau Akulich</footer>
